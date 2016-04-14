@@ -1,4 +1,4 @@
-/// <reference path="../typings/tedious/tedious.d.ts" />
+/// <reference path="typings/tedious/tedious.d.ts" />
 /// <reference path="sql.ts" />
 
 import * as express from "express"
@@ -22,7 +22,7 @@ var config = {
 
 var app = express();
 
-app.use('/static', express.static('app/html'));
+app.use('/static', express.static('html'));
 
 app.get("/api/authors", function(req, res){
     var connection = new tedious.Connection(config);

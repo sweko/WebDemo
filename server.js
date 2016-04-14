@@ -1,4 +1,4 @@
-/// <reference path="../typings/tedious/tedious.d.ts" />
+/// <reference path="typings/tedious/tedious.d.ts" />
 /// <reference path="sql.ts" />
 var express = require("express");
 var tedious = require("tedious");
@@ -15,7 +15,7 @@ var config = {
     }
 };
 var app = express();
-app.use('/static', express.static('dist/static'));
+app.use('/static', express.static('html'));
 app.get("/api/authors", function (req, res) {
     var connection = new tedious.Connection(config);
     connection.on('connect', function (err) {
@@ -156,4 +156,4 @@ app.listen(3000, function () {
 //   )
 // var app = express();
 // app.get("/api/authors", "");
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=server.js.map

@@ -2,10 +2,11 @@
   "name": "sweko-web-demo",
   "version": "1.0.0",
   "description": "Demo for the vs code presentation",
-  "main": "app\\index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "https://github.com/sweko/WebDemo.git",
   "author": "",
   "license": "MIT",
   "dependencies": {
